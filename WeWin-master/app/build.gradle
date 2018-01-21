@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+def supportVersion = "25.0.0"
+android {
+        compileSdkVersion 23
+        buildToolsVersion '25'
+    defaultConfig {
+        applicationId "com.xiaomolongstudio.wewin"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 111
+        versionName "1.1.1"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:' + supportVersion
+    compile 'com.android.support:appcompat-v7:' + supportVersion
+    compile 'com.android.support:cardview-v7:' + supportVersion
+    compile 'com.android.support:palette-v7:' + supportVersion
+    compile 'com.android.support:design:' + supportVersion
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'org.jsoup:jsoup:1.10.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.wuxiaolong.androidutils:androidutils:1.0.6'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.wuxiaolong.androidutils:androidutils:1.0.6'
+    compile 'com.mostafagazar:customshapeimageview:1.0.4'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+}
