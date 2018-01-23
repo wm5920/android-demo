@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+            android:id="@+id/btn_up"
+            android:onClick="onClickUp"
+            android:layout_width="match_parent"
+            android:text="滚到最上"
+            android:layout_height="wrap_content" />
+    <Button
+            android:id="@+id/btn_down"
+            android:onClick="onClickDown"
+            android:layout_width="match_parent"
+            android:text="滚到最下"
+            android:layout_height="wrap_content" />
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/scrollView">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="new activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

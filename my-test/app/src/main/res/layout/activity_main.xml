@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/old_version"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:text="测试跳转activity"
+        android:layout_height="wrap_content" />
+    <Button
+            android:id="@+id/scrollAc"
+            android:onClick="onClickScrollAc"
+            android:layout_width="match_parent"
+            android:text="scrollView demo"
+            android:layout_height="wrap_content" />
+    <Button
+            android:id="@+id/listView"
+            android:onClick="onClickListview"
+            android:layout_width="match_parent"
+            android:text="listView demo"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
